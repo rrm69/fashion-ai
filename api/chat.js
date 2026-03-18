@@ -48,7 +48,7 @@ module.exports = async function handler(req, res) {
         body: JSON.stringify({
           model: 'grok-4-1-fast-reasoning',
           messages,
-          max_tokens: 1000,
+          max_tokens: 131072,
           temperature: 0.7,
         }),
       });
